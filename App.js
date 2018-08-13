@@ -6,12 +6,19 @@ import {View,Text} from 'react-native';
 class App extends React.Component {
   render() {
     return (
-      <View style={{flex = 1, alignItems: 'center', justifyContent: 'center'}}>
-        <Text>Hello World , this is reatc native</Text>
+      <View styles.viewStyle>
+        <Text>Hello World , this is react native</Text>
       </View>
     );
   }
 }
 
+const styles = {
+	viewStyle: {	
+		flex : 1, 
+		alignItems: 'center', 
+		justifyContent: 'center'
+	}
+}
 //exports
 exports default App;
